@@ -73,3 +73,21 @@ Date.today.holiday?
 # Returns the previous weekend day
 @date.lt_holiday #=> #<Date>
 ```
+
+## Tricks
+
+Find out all weekends days of the given year
+
+```ruby
+require 'russian_production_calendar/ext/date'
+
+@holidays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:holiday?)
+```
+
+Find out working weekends days of the given year
+
+```ruby
+require 'russian_production_calendar/ext/date'
+
+@workdays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:workday?)
+```
