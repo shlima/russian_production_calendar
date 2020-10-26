@@ -76,7 +76,7 @@ Date.today.holiday?
 
 ## Tricks
 
-Find out all weekends days of the given year
+Find out all holidays of the given year
 
 ```ruby
 require 'russian_production_calendar/ext/date'
@@ -84,7 +84,7 @@ require 'russian_production_calendar/ext/date'
 @holidays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:holiday?)
 ```
 
-Find out working weekends days of the given year
+Find out working days of the given year
 
 ```ruby
 require 'russian_production_calendar/ext/date'
