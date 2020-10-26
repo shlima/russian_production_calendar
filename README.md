@@ -48,26 +48,26 @@ Date.today.holiday?
 @date.workday? #=> false
 
 # Returns the next business day (including the current one)
-@date.gte_workday #=> <Date>
+@date.gte_workday #=> #<Date>
 
 # Returns the previous business day (including the current one)
-@date.lte_workday #=> <Date>
+@date.lte_workday #=> #<Date>
 
 # Returns the next business day
-@date.gt_workday #=> <Date>
+@date.gt_workday #=> #<Date>
 
 # Returns the previous business day
-@date.lt_workday #=> <Date>
+@date.lt_workday #=> #<Date>
 
 # Returns the next weekend day (including the current one)
-@date.gte_holiday #=> <Date>
+@date.gte_holiday #=> #<Date>
 
 # Returns the previous weekend day (including the current one)
-@date.lte_holiday #=> <Date>
+@date.lte_holiday #=> #<Date>
 
 # Returns the next weekend day
-@date.gt_holiday #=> <Date>
+@date.gt_holiday #=> #<Date>
 
 # Returns the previous weekend day
-@date.lt_holiday #=> <Date>
+@date.lt_holiday #=> #<Date>
 ```
