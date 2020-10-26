@@ -8,7 +8,7 @@ require 'russian_production_calendar/error'
 module RussianProductionCalendar
   # Звездочкой (*) отмечены предпраздничные (сокращенные) дни.
   # Плюсом (+) отмечены перенесенные выходные дни
-  CALENDAR_PATH = 'russian_production_calendar/holidays.csv'
+  CALENDAR_PATH = File.join('russian_production_calendar', 'calendar.csv')
   SHORTENED_POSTFIX = '*'
   WEEKEND_POSTPONED_POSTFIX = '+'
   DAY_SEP = ','
