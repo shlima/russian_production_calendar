@@ -4,9 +4,6 @@ cache: bundler
 rvm:
   - 2.6.5
 
-services:
-  - docker
-
 before_install:
   - bundle install
 
