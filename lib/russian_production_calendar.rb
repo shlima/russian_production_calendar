@@ -12,6 +12,7 @@ module RussianProductionCalendar
   SHORTENED_POSTFIX = '*'
   WEEKEND_POSTPONED_POSTFIX = '+'
   DAY_SEP = ','
+  YEAR_COL = 'Год/Месяц'
 
   MONTHS_MAP = {
     1 => 'Январь',
@@ -115,7 +116,7 @@ module RussianProductionCalendar
   # @example {"2018" => { 1 => [1, 2, 3] }}
   def index
     @index ||= csv.each_with_object({}) do |row, object|
-      year = Integer(row.fetch('Год/Месяц'))
+      year = Integer(row.fetch(YEAR_COL))
 
       object[year] = MONTHS_MAP.each_with_object({}) do |(ix, name), obj|
         obj[ix] = row.fetch(name).split(DAY_SEP).each_with_object(Set.new) do |day, result|
