@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# to be able to use:
+# gem 'russian_production_calendar', require: 'russian_production_calendar/ext/date'
+require 'russian_production_calendar'
+
 class Date
   def holiday?
     RussianProductionCalendar.holiday?(self)

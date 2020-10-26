@@ -16,6 +16,9 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'russian_production_calendar'
+
+# if you wish to extend the standard Date class with gem's helpers
+gem 'russian_production_calendar', require: 'russian_production_calendar/ext/date'
 ```
 
 And then execute:
@@ -79,15 +82,11 @@ Date.today.holiday?
 Find out all holidays of the given year
 
 ```ruby
-require 'russian_production_calendar/ext/date'
-
 @holidays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:holiday?)
 ```
 
 Find out working days of the given year
 
 ```ruby
-require 'russian_production_calendar/ext/date'
-
 @workdays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:workday?)
 ```
