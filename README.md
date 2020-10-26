@@ -8,7 +8,7 @@
 
 This gem checks holiday/workday status of the given date. 
 Holidays [dataset](https://github.com/shlima/russian_production_calendar/blob/master/lib/russian_production_calendar/calendar.csv) is provided by [Open Data Portal](https://data.gov.ru/opendata/7708660670-proizvcalendar) 
-by Russian Ministry of Economic Development (includes add-ons from Consultant plus)
+by Russian Ministry of Economic Development (includes add-ons from [Consultant+](http://www.consultant.ru/law/ref/calendar/proizvodstvennye/))
 
 ## Installation
 
