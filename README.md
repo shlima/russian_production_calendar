@@ -79,14 +79,20 @@ Date.today.holiday?
 
 ## Tricks
 
-Find out all holidays of the given year
+Find out all holidays of the given year:
 
 ```ruby
 @holidays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:holiday?)
 ```
 
-Find out working days of the given year
+Find out working days of the given year:
 
 ```ruby
 @workdays = Range.new(Date.new(2020, 1, 1), Date.new(2020, 12, 31)).select(&:workday?)
+```
+
+Find out the number of days off during the New Year holidays:
+
+```ruby
+Date.new(2021, 1, 1).gt_workday -  Date.new(2021, 1, 1) #=> 10
 ```
