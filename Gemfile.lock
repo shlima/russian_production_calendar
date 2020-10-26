@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    russian_production_calendar (0.2.2020.10.26)
+    russian_production_calendar (0.3.2020.10.26)
 
 GEM
   remote: https://rubygems.org/
