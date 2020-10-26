@@ -1,0 +1,15 @@
+language: ruby
+cache: bundler
+
+rvm:
+  - 2.6.5
+
+services:
+  - docker
+
+before_install:
+  - bundle install
+
+script:
+  - bundle exec rubocop
+  - bundle exec rspec
