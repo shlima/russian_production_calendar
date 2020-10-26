@@ -135,11 +135,11 @@ RSpec.describe '2019' do
   end
 
   let(:year) do
-    Range.new(Date.new(2019, 1, 1), Date.new(2019, 12, 31)).to_a
+    days_of_year(2019)
   end
 
   it 'works for holidays' do
-    expect(year.select(&:holiday?)).to eq(holidays)
+    expect(days_of_year(2019).select(&:holiday?)).to eq(holidays)
   end
 
   it 'works for workdays' do

@@ -135,7 +135,7 @@ RSpec.describe '2021' do
   end
 
   let(:year) do
-    Range.new(Date.new(2021, 1, 1), Date.new(2021, 12, 31)).to_a
+    days_of_year(2021)
   end
 
   it 'works for holidays' do
